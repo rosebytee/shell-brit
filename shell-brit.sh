@@ -8,50 +8,54 @@ mommy() (
 
   COLORS_LIGHT_PINK='\e[38;5;217m'
   COLORS_LIGHT_BLUE='\e[38;5;117m'
+  COLORS_RED='\e[38;5;196m'
   COLORS_FAINT='\e[2m'
   COLORS_RESET='\e[0m'
 
-  DEF_WORDS_LITTLE="girl"
-  DEF_WORDS_PRONOUNS="her"
-  DEF_WORDS_ROLES="mommy"
-  DEF_MOMMY_COLOR="${COLORS_LIGHT_PINK}"
+  DEF_WORDS_LITTLE="bastard"
+  DEF_WORDS_PRONOUNS="them"
+  DEF_WORDS_ROLES="brit"
+  DEF_MOMMY_COLOR="${COLORS_RED}"
   DEF_ONLY_NEGATIVE="false"
 
-  NEGATIVE_RESPONSES="do you need MOMMYS_ROLE's help~? ❤️
-Don't give up, my love~ ❤️
-Don't worry, MOMMYS_ROLE is here to help you~ ❤️
-I believe in you, my sweet AFFECTIONATE_TERM~ ❤️
-It's okay to make mistakes, my dear~ ❤️
-just a little further, sweetie~ ❤️
-Let's try again together, okay~? ❤️
-MOMMYS_ROLE believes in you, and knows you can overcome this~ ❤️
-MOMMYS_ROLE believes in you~ ❤️
-MOMMYS_ROLE is always here for you, no matter what~ ❤️
-MOMMYS_ROLE is here to help you through it~ ❤️
-MOMMYS_ROLE is proud of you for trying, no matter what the outcome~ ❤️
-MOMMYS_ROLE knows it's tough, but you can do it~ ❤️
-MOMMYS_ROLE knows MOMMYS_PRONOUN little AFFECTIONATE_TERM can do better~ ❤️
-MOMMYS_ROLE knows you can do it, even if it's tough~ ❤️
-MOMMYS_ROLE knows you're feeling down, but you'll get through it~ ❤️
-MOMMYS_ROLE knows you're trying your best~ ❤️
-MOMMYS_ROLE loves you, and is here to support you~ ❤️
-MOMMYS_ROLE still loves you no matter what~ ❤️
-You're doing your best, and that's all that matters to MOMMYS_ROLE~ ❤️
-MOMMYS_ROLE is always here to encourage you~ ❤️"
+  NEGATIVE_RESPONSES="come on man, a severed goat could do better than this.
+yeah yeah go to stack overflow you lazy bastard.
+i have a carton of eggs, and if you keep this up, you'll have them ontop of ya head.
+fucks sake, seriously?
+blithering idiot..
+get on with it, bell end. really isn't that hard.
+are you gonna keep up with this shit all day?
+nothing, absolutely nothing. that's what i think of your iq.
+quit being a nonce and get a grip of yourself.
+we're up shit creek aren't we.
+bet you can't even organise a piss-up in a brewery.
+you're a walking argument for birth control
+if brains were dynamite, you wouldn’t have enough to blow your hat off.
+watching you fail is the highlight of my day.
+are you just naturally incompetent or is it a special talent?
+seriously, who ties your shoelaces for you?
+i’d call you a tool, but that’d imply you’re useful.
+you've fucked it man, no chance.
+"
 
-  POSITIVE_RESPONSES="*pets your head*
-awe, what a good AFFECTIONATE_TERM~\nMOMMYS_ROLE knew you could do it~ ❤️
-good AFFECTIONATE_TERM~\nMOMMYS_ROLE's so proud of you~ ❤️
-Keep up the good work, my love~ ❤️
-MOMMYS_ROLE is proud of the progress you've made~ ❤️
-MOMMYS_ROLE is so grateful to have you as MOMMYS_PRONOUN little AFFECTIONATE_TERM~ ❤️
-I'm so proud of you, my love~ ❤️
-MOMMYS_ROLE is so proud of you~ ❤️
-MOMMYS_ROLE loves seeing MOMMYS_PRONOUN little AFFECTIONATE_TERM succeed~ ❤️
-MOMMYS_ROLE thinks MOMMYS_PRONOUN little AFFECTIONATE_TERM earned a big hug~ ❤️
-that's a good AFFECTIONATE_TERM~ ❤️
-you did an amazing job, my dear~ ❤️
-you're such a smart cookie~ ❤️"
+  POSITIVE_RESPONSES="wow, you actually did it.
+nice work mate!
+didn't cock up this time, good on ya.
+oh. nice.
+wow, shit actually worked, good day eh?
+wanna grab a pint later?
+fuck yes, good work mate!
+knew you could pull it off.
+top notch, well done mate!
+absolute legend.
+blummin genius you are.
+you're on fire today my man!
+nailed it.
+absolute marvel ain't ya.
+well well well, look who's the smart chap now!
+i'd clap, but i'm lazy, well done though mate!
+absolutely smashing, well done mate!
+"
 
   # allow for overriding of default words (IF ANY SET)
 
