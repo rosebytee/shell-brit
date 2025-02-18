@@ -1,10 +1,11 @@
-# sudofox/shell-mommy.sh
+# rosebytee/shell-brit.sh
+# based on sudofox/shell-mommy.sh
 
-mommy() (
+brit() (
 
-  # SHELL_MOMMYS_LITTLE - what to call you~ (default: "girl")
-  # SHELL_MOMMYS_PRONOUNS - what pronouns mommy will use for themself~ (default: "her")
-  # SHELL_MOMMYS_ROLES - what role mommy will have~ (default "mommy")
+  # SHELL_BRITS_LITTLE - what to call you~ (default: "bastard")
+  # SHELL_BRITS_PRONOUNS - what pronouns brit will use for themself~ (default: "them")
+  # SHELL_BRITS_ROLES - what role brit will have~ (default "brit")
 
   COLORS_LIGHT_PINK='\e[38;5;217m'
   COLORS_LIGHT_BLUE='\e[38;5;117m'
@@ -15,7 +16,7 @@ mommy() (
   DEF_WORDS_LITTLE="bastard"
   DEF_WORDS_PRONOUNS="them"
   DEF_WORDS_ROLES="brit"
-  DEF_MOMMY_COLOR="${COLORS_RED}"
+  DEF_BRIT_COLOR="${COLORS_RED}"
   DEF_ONLY_NEGATIVE="false"
 
   NEGATIVE_RESPONSES="come on man, a severed goat could do better than this.
@@ -59,28 +60,28 @@ absolutely smashing, well done mate!
 
   # allow for overriding of default words (IF ANY SET)
 
-  if [ -n "$SHELL_MOMMYS_LITTLE" ]; then
-    DEF_WORDS_LITTLE="${SHELL_MOMMYS_LITTLE}"
+  if [ -n "$SHELL_BRITS_LITTLE" ]; then
+    DEF_WORDS_LITTLE="${SHELL_BRITS_LITTLE}"
   fi
-  if [ -n "$SHELL_MOMMYS_PRONOUNS" ]; then
-    DEF_WORDS_PRONOUNS="${SHELL_MOMMYS_PRONOUNS}"
+  if [ -n "$SHELL_BRITS_PRONOUNS" ]; then
+    DEF_WORDS_PRONOUNS="${SHELL_BRITS_PRONOUNS}"
   fi
-  if [ -n "$SHELL_MOMMYS_ROLES" ]; then
-    DEF_WORDS_ROLES="${SHELL_MOMMYS_ROLES}"
+  if [ -n "$SHELL_BRITS_ROLES" ]; then
+    DEF_WORDS_ROLES="${SHELL_BRITS_ROLES}"
   fi
-  if [ -n "$SHELL_MOMMYS_COLOR" ]; then
-    DEF_MOMMY_COLOR="${SHELL_MOMMYS_COLOR}"
+  if [ -n "$SHELL_BRITS_COLOR" ]; then
+    DEF_BRIT_COLOR="${SHELL_BRITS_COLOR}"
   fi
   # allow overriding to true
-  if [ "$SHELL_MOMMYS_ONLY_NEGATIVE" = "true" ]; then
+  if [ "$SHELL_BRITS_ONLY_NEGATIVE" = "true" ]; then
     DEF_ONLY_NEGATIVE="true"
   fi
   # if the variable is set for positive/negative responses, overwrite it
-  if [ -n "$SHELL_MOMMYS_POSITIVE_RESPONSES" ]; then
-    POSITIVE_RESPONSES="$SHELL_MOMMYS_POSITIVE_RESPONSES"
+  if [ -n "$SHELL_BRITS_POSITIVE_RESPONSES" ]; then
+    POSITIVE_RESPONSES="$SHELL_BRITS_POSITIVE_RESPONSES"
   fi
-  if [ -n "$SHELL_MOMMYS_NEGATIVE_RESPONSES" ]; then
-    NEGATIVE_RESPONSES="$SHELL_MOMMYS_NEGATIVE_RESPONSES"
+  if [ -n "$SHELL_BRITS_NEGATIVE_RESPONSES" ]; then
+    NEGATIVE_RESPONSES="$SHELL_BRITS_NEGATIVE_RESPONSES"
   fi
 
   # split a string on forward slashes and return a random element
@@ -112,11 +113,11 @@ absolutely smashing, well done mate!
     role="$(pick_word "${DEF_WORDS_ROLES}")"
     # sub in the terms, store in variable
     response="$(echo "$response" | sed "s/AFFECTIONATE_TERM/$affectionate_term/g")"
-    response="$(echo "$response" | sed "s/MOMMYS_PRONOUN/$pronoun/g")"
-    response="$(echo "$response" | sed "s/MOMMYS_ROLE/$role/g")"
+    response="$(echo "$response" | sed "s/BRITS_PRONOUN/$pronoun/g")"
+    response="$(echo "$response" | sed "s/BRITS_ROLE/$role/g")"
     # we have string literal newlines in the response, so we need to printf it out
     # print faint and colorcode
-    printf "${DEF_MOMMY_COLOR}$response${COLORS_RESET}\n"
+    printf "${DEF_BRIT_COLOR}$response${COLORS_RESET}\n"
   }
 
   success() {
