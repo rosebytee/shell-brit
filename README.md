@@ -1,10 +1,8 @@
-# shell brit
+# 🇬🇧 shell brit 🇬🇧
 
-inspired by [gankra/cargo-mommy](https://github.com/gankra/cargo-mommy)
+based on [sudofox/shell-mommy](https://github.com/sudofox/shell-mommy)
 
 this is a shell script that provides a `brit` function which emulates a bad-tempered brit in your shell. the `brit` function can be used to offer either insults or love, depending on the exit status of the command that is passed to it.
-
-<img src="preview.png" alt="example"></a>
 
 this will probably not improve your efficiency in any way, have fun
 
