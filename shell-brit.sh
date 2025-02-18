@@ -3,17 +3,14 @@
 
 brit() (
 
-  # SHELL_BRITS_LITTLE - what to call you~ (default: "bastard")
-  # SHELL_BRITS_PRONOUNS - what pronouns brit will use for themself~ (default: "them")
-  # SHELL_BRITS_ROLES - what role brit will have~ (default "brit")
-
   COLORS_LIGHT_PINK='\e[38;5;217m'
   COLORS_LIGHT_BLUE='\e[38;5;117m'
   COLORS_RED='\e[38;5;196m'
   COLORS_FAINT='\e[2m'
   COLORS_RESET='\e[0m'
 
-  DEF_WORDS_LITTLE="bastard"
+  # most variables do nothing as i've not implemented them
+  DEF_WORDS_LITTLE="bastard" 
   DEF_WORDS_PRONOUNS="them"
   DEF_WORDS_ROLES="brit"
   DEF_BRIT_COLOR="${COLORS_RED}"
